@@ -1,10 +1,6 @@
 
-from pickle import TRUE
 from telebot import types
 button = ['🇺🇿Uzbek','🇷🇺Russian']
-
-
-
 
 markup_ln = types.ReplyKeyboardMarkup(row_width=2,resize_keyboard=True,one_time_keyboard = True)
 markup_ln.add(*[types.KeyboardButton(advert) for advert in button])
